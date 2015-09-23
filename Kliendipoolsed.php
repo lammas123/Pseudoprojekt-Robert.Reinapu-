@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <button onclick="myFunction()"><a href="https://khk.ee">Tere maailm</button>
@@ -26,8 +27,19 @@
         "return false"
     }
 </script>
-
- </script>
+<img id="kass" src="Media/cat.jpg">
+<script>
+    $("img#kass").click(function () {
+        if($(this).attr("src") == "Media/cat.jpg")
+        {
+            $(this).attr("src", "Media/dog.jpg");
+        }
+        else
+        {
+            $(this).attr("src","Media/cat.jpg");
+        }
+    });
+</script>
 
 </body>
 </html>
