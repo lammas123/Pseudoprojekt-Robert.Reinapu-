@@ -39,6 +39,7 @@
             $(this).attr("src","Media/cat.jpg");
         }
     });
+
 </script>
 
 </body>
