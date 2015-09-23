@@ -16,10 +16,18 @@
         }
         document.getElementById("demo").innerHTML = x;
     }
+
 </script>
 
+<a href="www.khk.ee" onclick="myFunction();return false">Jääme siia!</a>
+<script>
+    function myFunction() {
+        alert("Jääme Siia")
+        "return false"
+    }
+</script>
 
-
+ </script>
 
 </body>
 </html>
