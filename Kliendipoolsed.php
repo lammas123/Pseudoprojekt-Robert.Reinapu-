@@ -12,16 +12,16 @@
 <a href="http://khk.ee/" onclick="alert('Tere maailm!')">Tere maailm!</a>
 <a href="#" onclick="alert ('Jääme siia')">Jääme siia</a>
 <!--Kass koeraks-->
-<!--<img id="meow" src="media/mjau.jpg">
+<!--<img id="cat" src="media/cat.jpg">
 <script>
     $("img#meow").click(function () {
-        if($(this).attr("src") == "media/mjau.jpg")
+        if($(this).attr("src") == "Media/cat.jpg")
         {
-            $(this).attr("src", "media/koer.png");
+            $(this).attr("src", "Media/dog.png");
         }
         else
         {
-            $(this).attr("src","media/mjau.jpg");
+            $(this).attr("src","Media/cat.jpg");
         }
     });
 </script>-->
