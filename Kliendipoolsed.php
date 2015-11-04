@@ -48,11 +48,11 @@
         $('body').css('backgroundColor', $('#b3').text());
     });
     //nuppude lõpp
+    //parema kliki keelamine
+    $(document).on("contextmenu", function () {
+        return false;
+    });
+
 </script>
 </body>
 </html>
-<!--
- * Created by PhpStorm.
- * Date: 23/09/2015
- * Time: 10:50
- -->
