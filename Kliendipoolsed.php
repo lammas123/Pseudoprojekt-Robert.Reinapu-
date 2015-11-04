@@ -30,7 +30,7 @@
     <button id="b1">Blue</button>
     <button id="b2">Red</button>
     <button id="b3">Green</button>
-    <button id="kass">Toggle</button>
+    <button id="kass">Toggle Cat</button>
 </span>
 <script>
     $(document).ready(function () {
