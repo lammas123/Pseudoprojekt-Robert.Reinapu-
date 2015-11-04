@@ -1,47 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
     <meta charset="UTF-8">
     <title>Document</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="jquery-1.11.3.min.js"></script>
 </head>
 <body>
-<button onclick="myFunction()"><a href="https://khk.ee">Tere maailm</button>
+<!--Nupu loomine-->
+<button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
+<a href="http://khk.ee/" onclick="alert('Tere maailm!')">Tere maailm!</a>
+<a href="#" onclick="alert ('Jääme siia')">Jääme siia</a>
+<!--Kass koeraks-->
+<!--<img id="meow" src="media/mjau.jpg">
 <script>
-    function myFunction() {
-        var x;
-        if (confirm("Tere maailm!") == true) {
-            x = "You pressed OK!";
-        } else {
-            x = "You pressed Cancel!";
+    $("img#meow").click(function () {
+        if($(this).attr("src") == "media/mjau.jpg")
+        {
+            $(this).attr("src", "media/koer.png");
         }
-        document.getElementById("demo").innerHTML = x;
-    }
-
-</script>
-
-<a href="www.khk.ee" onclick="myFunction();return false">Jääme siia!</a>
+        else
+        {
+            $(this).attr("src","media/mjau.jpg");
+        }
+    });
+</script>-->
+<img id="cat" src="Media/cat.jpg">
+<span class="buttons">
+    <button id="b1">Blue</button>
+    <button id="b2">Red</button>
+    <button id="b3">Green</button>
+</span>
 <script>
-    function myFunction() {
-        alert("Jääme Siia")
-        "return false"
-    }
-
-    </script>
-
-
-    <img id="kass" src="Media/cat.jpg">
-        <script>
-        $(document).ready(function(){
-            $('#kass').click(function(){
-                $(this).replaceWith('<img src="Media/dog.jpg">');
-
-            });
-
-
+    $(document).ready(function () {
+        $('#cat').click(function () {
+            $(this).replaceWith('<img src="Media/dog.jpg">');
         });
-
+    });
+    //Nuppude funktsioon
+    $('#b1').click(function () {
+        $('body').css("background-color", "Blue");
+        //$('body').css('backgroundColor', $('#b1').text());*/
+    });
+    $('#b2').click(function () {
+        $('body').css("background-color", "Red");
+    });
+    $('#b3').click(function () {
+        $('body').css("background-color", "Green");
+    });
+    //nuppude lõpp
 </script>
 </body>
 </html>
+<!--
+ * Created by PhpStorm.
+ * Date: 23/09/2015
+ * Time: 10:50
+ -->
