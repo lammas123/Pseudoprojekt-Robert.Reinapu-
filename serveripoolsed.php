@@ -20,11 +20,17 @@ if (in_array(substr($Robert->firstname, 0, 1), $vowels)) {
 }
 
 
+//Floats
+$floating1 = 1.23;
+$floating2 = 2.34;
+$float_sum = $floating1 + $floating2;
+echo "<p>" . $float_sum . "</p>";
+
 //Tingimused
 if ($eesnimi_algab_vokaaliga) {
     echo "<p>Nimi algab vokaaliga</p>";
 };
 
 
-echo "<p>" . $Robert->firstname . " " . $Robert->lastname . " (" . $Robert->age . ") " . $Robert->sex . "</p>";
+//echo "<p>" . $Robert->firstname . " " . $Robert->lastname . " (" . $Robert->age . ") " . $Robert->sex . "</p>";
 
