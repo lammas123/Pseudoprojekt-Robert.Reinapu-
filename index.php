@@ -13,9 +13,10 @@
 
 <?php
 
-if (isset($_GET['page'])) {
-    require $_GET['page'] . '.php';
-}
+$page = (!empty($_GET['page']) ? $_GET['page'] : 'home');
+
+require($page . '.php')
+
 ?>
 
 </body>
