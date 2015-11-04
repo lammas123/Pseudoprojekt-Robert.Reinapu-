@@ -30,6 +30,7 @@
     <button id="b1">Blue</button>
     <button id="b2">Red</button>
     <button id="b3">Green</button>
+    <button id="kass">Toggle</button>
 </span>
 <script>
     $(document).ready(function () {
@@ -47,7 +48,11 @@
     $('#b3').click(function () {
         $('body').css('backgroundColor', $('#b3').text());
     });
-    //nuppude lõpp
+
+    //Toggle pilt
+    $('#kass').click(function () {
+        $("img").toggle();
+    });
 </script>
 </body>
 </html>
