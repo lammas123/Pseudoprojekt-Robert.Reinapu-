@@ -31,9 +31,10 @@ if ($eesnimi_algab_vokaaliga) {
     echo "<p>Nimi algab vokaaliga</p>";
 };
 
-
 //echo "<p>" . $Robert->firstname . " " . $Robert->lastname . " (" . $Robert->age . ") " . $Robert->sex . "</p>";
 
 echo $_GET['koer'];
 
+
 ?>
+
