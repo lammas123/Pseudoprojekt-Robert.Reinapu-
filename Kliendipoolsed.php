@@ -39,14 +39,13 @@
     });
     //Nuppude funktsioon
     $('#b1').click(function () {
-        $('body').css("background-color", "Blue");
-        //$('body').css('backgroundColor', $('#b1').text());*/
+        $('body').css('backgroundColor', $('#b1').text());
     });
     $('#b2').click(function () {
-        $('body').css("background-color", "Red");
+        $('body').css('backgroundColor', $('#b2').text());
     });
     $('#b3').click(function () {
-        $('body').css("background-color", "Green");
+        $('body').css('backgroundColor', $('#b3').text());
     });
     //nuppude lõpp
 </script>
