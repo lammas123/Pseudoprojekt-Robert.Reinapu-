@@ -1,12 +1,14 @@
 <?php
-//strings
-$firstname = "Robert";
-$lastname = "Reinapu";
 
-//Integer
-$age = 19;
+//Massiiv
+$person = array(
+    "firstname" => "Robert",
+    "lastname" => "Reinapu",
+    "age" => "19"
 
+);
 //boolean
 $eesnimi_algab_vokaaliga = false;
 
-echo $firstname . " " . $lastname . " ($age)";
+echo "<p>" . $person['firstname'] . " " . $person['lastname'] . " (" . $person['age'] . ")</p>";
+
