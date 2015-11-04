@@ -53,6 +53,7 @@
     $('#kass').click(function () {
         $("img").toggle();
     });
+
 </script>
 </body>
 </html>
