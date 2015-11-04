@@ -34,3 +34,6 @@ if ($eesnimi_algab_vokaaliga) {
 
 //echo "<p>" . $Robert->firstname . " " . $Robert->lastname . " (" . $Robert->age . ") " . $Robert->sex . "</p>";
 
+echo $_GET['koer'];
+
+?>
