@@ -11,6 +11,7 @@
 <button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
 <a href="http://khk.ee/" onclick="alert('Tere maailm!')">Tere maailm!</a>
 <a href="#" onclick="alert ('Jääme siia')">Jääme siia</a>
+
 <!--Kass koeraks-->
 <!--<img id="cat" src="media/cat.jpg">
 <script>
