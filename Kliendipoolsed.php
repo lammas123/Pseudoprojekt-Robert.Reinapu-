@@ -8,9 +8,21 @@
 </head>
 <body>
 <!--Nupu loomine-->
-<button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
-<a href="http://khk.ee/" onclick="alert('Tere maailm!')">Tere maailm!</a>
-<a href="#" onclick="alert ('Jääme siia')">Jääme siia</a>
+
+<button onclick="myFunctioni()"><a href="http://www.khk.ee" a/>Tere maailm</button>
+<script>
+    function myFunctioni() {
+        alert("Tere Maailm!");
+    }
+</script>
+<!--Ülesanne 4-->
+<a href="www.khk.ee" onclick="myFunction();return false">Jääme siia!</a>
+<script>
+    function myFunction() {
+        alert("Jääme Siia")
+        "return false"
+    }
+</script>
 
 <!--Kass koeraks-->
 <!--<img id="cat" src="media/cat.jpg">
