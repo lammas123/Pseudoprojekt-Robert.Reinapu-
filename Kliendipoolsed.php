@@ -23,7 +23,6 @@
         "return false"
     }
 </script>
-
 <!--Kass koeraks-->
 <!--<img id="cat" src="media/cat.jpg">
 <script>
