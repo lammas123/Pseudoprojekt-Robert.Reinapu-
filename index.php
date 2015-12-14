@@ -1,8 +1,16 @@
+<?php
+
+$page = (!empty($_GET['page']) ? $_GET['page'] : 'home');
+
+require($page . '.php')
+
+?>
+
 <!doctype html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Pseudo ylesanne</title>
+    <title>Totaalne Pseudovärk</title>
 </head>
 <body>
 
@@ -11,10 +19,6 @@
     <input type="submit">
 </form>
 
-<?php
-$page = (!empty($_GET['page']) ? $_GET['page'] : 'home');
-require($page . '.php')
-?>
 
 </body>
 </html>
