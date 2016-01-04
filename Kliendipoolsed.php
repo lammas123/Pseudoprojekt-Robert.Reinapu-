@@ -96,5 +96,6 @@
 
 <button id="rightClick">Luba parem klõps</button>
 
+
 </body>
 </html>
