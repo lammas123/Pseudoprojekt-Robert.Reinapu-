@@ -1,30 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Martini PseudoProjekt</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
-
 <body>
+<!--Nupu loomine-->
+
+<button onclick="myFunctioni()"><a href="http://www.khk.ee" a/>Tere maailm</button>
 <script>
-    //    function changeImg() {
-    //        var pic = document.getElementById('pilt');
-    //        if (pic.name == "KASS") {
-    //            pic.src="http://www.dog-boarding-wetherby.co.uk/wp-content/uploads/How-to-choose-a-healthy-dog-2.jpg";
-    //            pic.name="KOER";
-    //        }
-    //        else {
-    //            pic.src="http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg";
-    //            pic.name="KASS";
-    //        }
-    //    }
-    function clickOnBrowser() {
-        if (event.button === 2) {
-            return false;
-        }
+    function myFunctioni() {
+        alert("Tere Maailm!");
     }
-    // Keela ära parema hiirekliki kasutamine veebilehel..
+</script>
+<!--Ülesanne 4-->
+<div><a href="www.khk.ee" onclick="myFunction();return false">Jääme siia!</a></div>
+
+<script>
+    function myFunction() {
+        alert("Jääme Siia")
+        "return false"
+    }
+</script>
+<!--Kass koeraks-->
+<!--<img id="cat" src="media/cat.jpg">
+<script>
+    $("img#meow").click(function () {
+        if($(this).attr("src") == "Media/cat.jpg")
+        {
+            $(this).attr("src", "Media/dog.png");
+        }
+        else
+        {
+            $(this).attr("src","Media/cat.jpg");
+        }
+    });
+</script>-->
+<img id="cat" src="Media/cat.jpg">
+<span class="buttons">
+    <button id="b1">Blue</button>
+    <button id="b2">Red</button>
+    <button id="b3">Green</button>
+    <button id="kass">Toggle Cat</button>
+</span>
+<script>
+    $(document).ready(function () {
+        $('#cat').click(function () {
+            $(this).replaceWith('<img src="Media/dog.jpg">');
+        });
+    });
+    //Nuppude funktsioon
+    $('#b1').click(function () {
+        $('body').css('backgroundColor', $('#b1').text());
+    });
+    $('#b2').click(function () {
+        $('body').css('backgroundColor', $('#b2').text());
+    });
+    $('#b3').click(function () {
+        $('body').css('backgroundColor', $('#b3').text());
+    });
+
+    //Toggle pilt
+    $('#kass').click(function () {
+        $("img").toggle();
+    });
+
+    // 10. Ylesanne
+
     function allowRightClick(allow) {
         if (!allow) {
             if (document.all && !document.getElementById) {
@@ -39,39 +83,18 @@
     $(document).ready(function () {
         allowRightClick(false);
         $('#pilt').click(function () {
-            // console.log("tere!!!!!!");
-            $('#pilt').attr('src', "http://www.dog-boarding-wetherby.co.uk/wp-content/uploads/How-to-choose-a-healthy-dog-2.jpg");
         });
         $('.btn').click(function () {
-            // console.log("tere!!!!!!");
             $('body').css('backgroundColor', $(this).text());
         });
         $('#rightClick').click(function () {
             allowRightClick(true);
         });
     });
+
 </script>
 
-<button onclick="alert('tere maailm!!');">Tere maailm</button>
-<div>
-    <a onclick="alert('tere maailm!!');" href="http://khk.ee/">tere maailm</a>
-</div>
-<div>
-    <a href="" onclick="alert('jääme siia');">jääme siia</a>
-</div>
-
-<!--<img id='pilt' name="KASS" onclick="changeImg()" src="http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg">-->
-<img id='pilt' name="KASS"
-     src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Large_Siamese_cat_tosses_a_mouse.jpg" alt="Looma Pilt">
-
-<div>
-    <button class="btn" id="red">red</button>
-    <button class="btn" id="green">green</button>
-    <button class="btn" id="blue">blue</button>
-
-
-</div>
-<br>
 <button id="rightClick">Luba parem klõps</button>
+
 </body>
 </html>
